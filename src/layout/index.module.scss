@@ -1,0 +1,198 @@
+
+@import '@/common/styles/common.scss';
+
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.header{
+    // font-family: $font_kalam;
+    padding: 24px 0;
+    .container{
+        @include container;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo{
+            font-family: $font_kalam;
+            font-size: 42px;
+            font-weight: bold;
+            color: $color_text_lighter;
+            background: linear-gradient(90deg, #00C0FD, #E70FAA);
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .navbar{
+            display: flex;
+            align-items: center;
+            gap: 54px;
+
+            .navList{
+                display: flex;
+                gap: 67px;
+                font-size: 20px;
+
+                .navItem{
+                    position: relative;
+                    transition: all 0.2s ease;
+
+                    @keyframes toFullWidth {
+                        from{
+                            width: 0;
+                        }
+                        to{
+                            width: 100%;
+                        }
+                    }
+
+                    &:hover{
+                        color: white;
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            width: 100%;
+                            height: 2px;
+                            background: linear-gradient(90deg, #00C0FD, #E70FAA);
+                            bottom: -6px;
+                            left: 0;
+                            animation-name: toFullWidth;
+                            animation-duration: 0.4s;
+                            // animation-timing-function: 1s;
+                        }
+                    }
+                }
+            }
+
+            .navIconList{
+                display: flex;
+                gap: 20px;
+
+                .iconItem{
+                    transition: all 0.2s ease;
+
+                    svg{
+                        width: 30px;
+                        height: 30px;
+
+                        g{
+                            fill: $color_text_secondary;
+                        }
+
+                        path{
+                            fill: $color_text_secondary;
+
+                        }
+                    }
+
+                    &:hover{
+                        svg{
+                            g{
+                                fill: white;
+                            }
+    
+                            path{
+                                fill: white;
+    
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer{
+    .container{
+        @include container;
+
+        .info{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #42446e31;
+            padding: 60px 0;
+
+            .left{
+                font-family: $font_kalam;
+                font-size: 36px;
+                font-weight: bold;
+            }
+
+            .right{
+                display: flex;
+                align-items: center;
+                gap: 54px;
+
+                .social{
+                    display: flex;
+                    gap: 18px;
+
+                    .iconItem{
+                        transition: all 0.2s ease;
+    
+                        svg{
+                            width: 30px;
+                            height: 30px;
+    
+                            g{
+                                fill: $color_text_secondary;
+                            }
+    
+                            path{
+                                fill: $color_text_secondary;
+    
+                            }
+                        }
+    
+                        &:hover{
+                            svg{
+                                g{
+                                    fill: white;
+                                }
+        
+                                path{
+                                    fill: white;
+        
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 0;
+
+            .listNav{
+                display: flex;
+                gap: 52px;
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 14px;
+
+                span{
+                    color: $color_text_lighter;
+                    background: linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%);
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                }
+            }
+        }
+    }
+}
+
+.main{
+    flex: 1;
+}
