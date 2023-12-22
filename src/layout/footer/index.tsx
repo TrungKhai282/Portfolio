@@ -4,13 +4,14 @@ import Link from "next/link";
 
 import GithubIcon from "@/assets/icons/github.svg";
 import LinkedinIcon from "@/assets/icons/linkedin.svg";
+import clsx from "clsx";
 
 const Footer = () => {
   return (
     <div className={style.footer}>
       <div className={style.container}>
         <div className={style.info}>
-          <div className={style.left}>Portfolio</div>
+          <div className={style.left}>TrungKhai</div>
           <div className={style.right}>
             <p>+84365472802</p>
             <p>khainguyentrantrung@gmail.com</p>
@@ -25,7 +26,7 @@ const Footer = () => {
           </div>
         </div>
         <div className={style.navbar}>
-          <div className={style.listNav}>
+          <div className={clsx(style.listNav, "animate__animated")}>
             <Link href={"/"} className={style.navItem}>
               Home
             </Link>
@@ -38,7 +39,7 @@ const Footer = () => {
             <Link href={"/"} className={style.navItem}>
               Project
             </Link>
-            <Link href={"/"} className={style.navItem}>
+            <Link href={"/"} id="contact" className={style.navItem}>
               Contact
             </Link>
           </div>

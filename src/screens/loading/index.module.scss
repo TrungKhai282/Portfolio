@@ -1,0 +1,16 @@
+@import '@/common/styles/common.scss';
+
+.loadingScreen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    p{
+        font-family: $font_dm;
+        font-weight: bolder;
+        font-size: 52px;
+    }
+}

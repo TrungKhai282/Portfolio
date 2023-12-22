@@ -1,12 +1,14 @@
 @import '../fonts/dm_sans/stylesheet.scss';
 @import '../fonts/Kalam/stylesheet.scss';
+@import '../fonts/poppins/stylesheet.scss';
 
 // Fonts
-$font_main: 'DM Sans', sans-serif;
+$font_main: 'Poppins', sans-serif;
+$font_dm: 'DM Sans', sans-serif;
 $font_kalam: 'Kalam';
 
 // Font-size
-$font_size_medium: 18px;
+$font_size_medium: 16px;
 
 // Color
 $color_background_main: #191919;
@@ -62,5 +64,10 @@ $XXS: 320px;
 @mixin container{
     max-width: $LG;
     margin: 0 auto;
-    padding: 0 100px;
+    padding-left: 72px;
+    padding-right: 72px;
+    @include Responsive(MD){
+        padding-left: 48px;
+        padding-right: 48px;
+    }
 }

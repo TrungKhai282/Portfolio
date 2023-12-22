@@ -15,13 +15,12 @@ const nextReactSvgConfig = {
 const nextConfig = {
   images: {
     remotePatterns: [
-      // This is config for resource of image
-      //   {
-      //     protocol: "https",
-      //     hostname: "pbxt.replicate.delivery",
-      //     port: "",
-      //     pathname: "/**",
-      //   },
+        {
+          protocol: "https",
+          hostname: "lh3.googleusercontent.com",
+          port: "",
+          pathname: "/**",
+        },
     ],
   },
 };

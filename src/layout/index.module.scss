@@ -6,10 +6,12 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 .header{
-    // font-family: $font_kalam;
+    font-family: $font_dm;
     padding: 24px 0;
     .container{
         @include container;
@@ -25,21 +27,55 @@
             background: linear-gradient(90deg, #00C0FD, #E70FAA);
             -webkit-text-fill-color: transparent;
             background-clip: text;
+
+            @include Responsive(MD){
+                font-size: 32px;
+            }
         }
 
         .navbar{
             display: flex;
             align-items: center;
-            gap: 54px;
+            flex: 1;
+            justify-content: space-between;
+            padding-left: 48px;
+            max-width: 700px;
+
+            @include Responsive(MD){
+                max-width: 550px;
+            }
+
+            @include Responsive(SM){
+                justify-content: flex-end;
+            padding-left: unset;
+            }
 
             .navList{
                 display: flex;
-                gap: 67px;
                 font-size: 20px;
+                justify-content: space-between;
+                flex: 1;
+
+                @include Responsive(MD){
+                    font-size: 16px;
+                }
+
+                @include Responsive(SM){
+                    display: none;
+                }
 
                 .navItem{
                     position: relative;
                     transition: all 0.2s ease;
+
+                    @include Responsive(MD){
+                        margin-left: 8px;
+                        text-wrap: nowrap;
+
+                        &:first-child{
+                            margin-left: 0;
+                        }
+                    }
 
                     @keyframes toFullWidth {
                         from{
@@ -70,7 +106,13 @@
 
             .navIconList{
                 display: flex;
-                gap: 20px;
+                margin-left: 48px;
+                gap: 18px;
+
+                @include Responsive(MD){
+                    margin-left: 24px;
+                    gap: 8px;
+                }
 
                 .iconItem{
                     transition: all 0.2s ease;
@@ -78,6 +120,11 @@
                     svg{
                         width: 30px;
                         height: 30px;
+
+                        @include Responsive(MD){
+                            width: 24px;
+                            height: 24px;
+                        }
 
                         g{
                             fill: $color_text_secondary;
@@ -108,6 +155,7 @@
 }
 
 .footer{
+    font-family: $font_dm;
     .container{
         @include container;
 
@@ -116,6 +164,11 @@
             justify-content: space-between;
             border-bottom: 1px solid #42446e31;
             padding: 60px 0;
+
+            @include Responsive(MD){
+                flex-direction: column;
+                align-items: center;
+            }
 
             .left{
                 font-family: $font_kalam;
@@ -126,7 +179,22 @@
             .right{
                 display: flex;
                 align-items: center;
-                gap: 54px;
+                justify-content: space-between;
+                flex: 1;
+                margin-left: 48px;
+                max-width: 550px;
+                gap: 16px;
+
+                @include Responsive(MD){
+                    margin-left: 0;
+                    max-width: 600px;
+                    width: 100%;
+                }
+
+                @include Responsive(SM){
+                    flex-direction: column;
+                    gap: 0;
+                }
 
                 .social{
                     display: flex;
@@ -173,10 +241,20 @@
             align-items: center;
             padding: 60px 0;
 
+            @include Responsive(MD){
+                flex-direction: column;
+                gap: 16px;
+            }
+
             .listNav{
                 display: flex;
                 gap: 52px;
                 font-size: 18px;
+                flex-wrap: wrap;
+
+                .navItem{
+                    text-wrap: nowrap;
+                }
             }
 
             p {
