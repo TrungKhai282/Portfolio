@@ -8,8 +8,10 @@ import LinkedinIcon from "@/assets/icons/linkedin.svg";
 import clsx from "clsx";
 import CloseIcon from "@/assets/icons/close.svg";
 import MenuIcon from "@/assets/icons/menu.svg";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
+  const pathname = usePathname();
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
   const [fixHeader, setFixHeader] = useState(false);
   const mobileMenuRef: LegacyRef<HTMLDivElement> | null = useRef(null);
@@ -29,7 +31,9 @@ const Header = () => {
         }
       });
     }
-  }, [window]);
+
+    setOpenMobileMenu(false);
+  }, [window, pathname]);
 
   const closeMobileMenu = () => {
     mobileMenuRef.current?.classList.add("animate__fadeOut");
