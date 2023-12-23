@@ -53,6 +53,7 @@
         .avatar{
             width: 30%;
             overflow: hidden;
+            opacity: 0;
 
             @include Responsive(SM){
                 width: 50%;
@@ -65,6 +66,10 @@
                 height: auto;
                 vertical-align: middle;
                 border-radius: 50%;
+            }
+
+            .active{
+                opacity: 1;
             }
         }
     }
@@ -162,10 +167,24 @@
             gap: 5%;
             flex-wrap: wrap;
             margin-top: 80px;
+            justify-content: center;
 
             .item{
                 width: 30%;
-                margin-top: 5%;
+                margin-top: 48px;
+
+                @include Responsive(MD){
+                    width: 45%;
+                    margin-top: 48px;
+                }
+
+                @include Responsive(SM){
+                    width: 100%;
+
+                    &:first-child{
+                        margin-top: 0;
+                    }
+                }
             }
         }
     }

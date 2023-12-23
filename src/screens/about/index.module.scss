@@ -1,0 +1,16 @@
+@import '@/common/styles/common.scss';
+
+.aboutScreen {
+    @include container;
+    margin-top: 42px;
+
+    .title{
+        font-size: 42px;
+        font-weight: 600;
+        margin: 38px 0;
+    }
+
+    .frame{
+        max-width: 800px;
+    }
+}

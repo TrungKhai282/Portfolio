@@ -1,0 +1,121 @@
+@import '@/common/styles/common.scss';
+
+.aboutScreen {
+    @include container;
+    margin-top: 42px;
+    display: flex;
+    justify-content: space-between;
+
+    @include Responsive(SM){
+        flex-direction: column;
+    }
+
+    .title{
+        font-size: 42px;
+        font-weight: 600;
+        margin: 38px 0;
+
+        @include Responsive(MD){
+            font-size: 36px;
+        }
+
+        @include Responsive(SM){
+            font-size: 28px;
+        }
+
+        @include Responsive(XS){
+            font-size: 22px;
+        }
+    }
+
+    .left{
+        width: 50%;
+        max-width: 800px;
+        
+
+        @include Responsive(SM){
+           order: 1;
+           width: 100%;
+        }
+    }
+
+    .right{
+        width: 40%;
+        margin-top: 38px;
+        background-color: #000000;
+        border-radius: 32px;
+        overflow: hidden;
+        height: fit-content;
+        backdrop-filter: blur(1100px);
+        
+
+        @include Responsive(SM){
+           width: 100%;
+           max-height: unset;
+        }
+
+
+        .image{
+            width: 100%;
+            overflow: hidden;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .info{
+            max-height: 200px;
+            padding-bottom: 48px;
+
+            .name{
+                font-size: 32px;
+                padding: 22px;
+                color: $color_text_lighter;
+    
+                @include Responsive(MD){
+                    font-size: 28px;
+                }
+    
+                @include Responsive(SM){
+                    font-size: 22px;
+                }
+    
+                @include Responsive(XS){
+                    font-size: 18px;
+                }
+            }
+    
+            .visit,
+            .position{
+                font-size: 18px;
+                padding: 0 22px 22px 22px;
+    
+                @include Responsive(MD){
+                    font-size: 16px;
+                }
+    
+                @include Responsive(SM){
+                    font-size: 14px;
+                }
+    
+                span{
+                    color: $color_text_lighter;
+                    font-weight: 600;
+                }
+            }
+
+            .visit{
+                a{
+                    font-style: italic;
+                    font-weight: 400;
+                    color: $color_text_lighter;
+                    background: linear-gradient(90deg, #00C0FD, #E70FAA);
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                }
+            }
+
+        }
+    }
+}

@@ -4,6 +4,9 @@
     max-width: 373px;
     border-radius: 20px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
 
     &:hover{
         .cardImage{
@@ -16,31 +19,40 @@
     .cardImage{
         width: 100%;
         height: 260px;
-        background-color: grey;
+        background-color: white;
         display: flex;
         align-items: center;
         justify-content: center;
         overflow: hidden;
 
         img{
-            object-fit: contain;
-            width: auto;
-            height: auto;
+            height: 100%;
+            // object-fit: contain;
             transition: all ease-out 0.2s;
         }
     }
 
     .cardInfo{
+        flex: 1;
         padding: 27px;
         background-color: #363636;
 
         .title{
-            font-size: 28px;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 16px;
+
+            @include Responsive(SM){
+                font-size: 18px;
+            }
         }
 
         .desc{
-            font-size: 18px;
+            font-size: 14px;
             color: $color_text_secondary;
+
+            @include Responsive(MD){
+            }
         }
     }
 }

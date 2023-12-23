@@ -1,0 +1,19 @@
+@import '@/common/styles/common.scss';
+
+.contactScreen {
+    @include container;
+    text-align: center;
+
+    p{
+        font-size: 58px;
+        font-weight: 700;
+    }
+
+    .mail{
+        font-size: 48px;
+        color: $color_text_lighter;
+        background: linear-gradient(90deg, #00C0FD, #E70FAA);
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+}

@@ -1,0 +1,43 @@
+@import '@/common/styles/common.scss';
+
+.projectScreen{
+    @include container;
+
+    .title{
+        font-size: 42px;
+        font-weight: 600;
+        margin: 38px 0;
+
+        p{
+            font-size: 20px;
+            font-weight: 400;
+            color: $color_text_secondary;
+        }
+    }
+
+    .listProject{
+        display: flex;
+        gap: 5%;
+        flex-wrap: wrap;
+        margin-top: 80px;
+        justify-content: center;
+
+        .item{
+            width: 30%;
+            margin-top: 48px;
+
+            @include Responsive(MD){
+                width: 45%;
+                margin-top: 48px;
+            }
+
+            @include Responsive(SM){
+                width: 100%;
+
+                &:first-child{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}

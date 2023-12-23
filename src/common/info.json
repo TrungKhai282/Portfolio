@@ -1,0 +1,166 @@
+{
+  "techStack": [
+    {
+      "imgUrl": "/stackIcon/html.svg",
+      "name": "HTML 5"
+    },
+    {
+      "imgUrl": "/stackIcon/css.svg",
+      "name": "CSS 3"
+    },
+    {
+      "imgUrl": "/stackIcon/js.svg",
+      "name": "Javascript"
+    },
+    {
+      "imgUrl": "/stackIcon/ts.svg",
+      "name": "Typescript"
+    },
+    {
+      "imgUrl": "/stackIcon/nodejs.svg",
+      "name": "NodeJS"
+    },
+    {
+      "imgUrl": "/stackIcon/reactjs.svg",
+      "name": "ReactJs"
+    },
+    {
+      "imgUrl": "/stackIcon/nextjs.svg",
+      "name": "NextJs"
+    },
+    {
+      "imgUrl": "/stackIcon/redux.svg",
+      "name": "Redux"
+    },
+    {
+      "imgUrl": "/stackIcon/tailwind.svg",
+      "name": "Tailwind CSS"
+    },
+    {
+      "imgUrl": "/stackIcon/sass.svg",
+      "name": "Sass/Scss"
+    },
+    {
+      "imgUrl": "/stackIcon/antd.svg",
+      "name": "Ant Design"
+    },
+    {
+      "imgUrl": "/stackIcon/git.svg",
+      "name": "Git"
+    },
+    {
+      "imgUrl": "/stackIcon/github.svg",
+      "name": "Github"
+    },
+    {
+      "imgUrl": "/stackIcon/vscode.svg",
+      "name": "VS Code"
+    }
+  ],
+  "project": [
+    {
+      "name": "AI Images Generator",
+      "desc": "Web app supports users to create images with text or create new styles with existing images by integrating AI",
+      "img": "/project/image-ai.jpeg",
+      "position": "Frontend",
+      "responsibility": [
+        "Build UI according to customer requirements",
+        "Main functions include: Create image from text, create image from image, preview image after generating, download image, see a list of images created by others with arrangements based on views and creation time, manage your created images with functions such as favorite, delete, edit, download, recreate, and view detailed image information."
+      ],
+      "techs": ["Typescript", "NextJs", "ReactQuery", "Sass module"]
+    },
+    {
+      "name": "SonyBank Banking Web App",
+      "desc": "Chain of banking application system for customers, businesses and management staff",
+      "img": "/project/sony.png",
+      "position": "Frontend",
+      "responsibility": [
+        "Fix system errors discovered by the tester team from the Japanese partner.",
+        "Write reports during troubleshooting, describing the cause of the problem, the fix, and related extensive testing.",
+        "Following the document to develop and update feature for application.",
+        "Review code as well as provide solutions to other members during the work process."
+      ],
+      "techs": [
+        "Typescript",
+        "NextJs",
+        "Redux Saga",
+        " Styled component",
+        "MUI",
+        "I18n"
+      ]
+    },
+    {
+      "name": "VM Style Shop Website",
+      "desc": "Fashion sales website of fashion brand Vmstyle",
+      "img": "/project/vm.png",
+      "position": "Frontend",
+      "responsibility": [
+        "Build UI based on Figma design, work with the design team to advise on the optimal design in terms of aesthetics and in accordance with customer requirements.",
+        "Implement functions on home page, product page, shopping cart, and payment",
+        "Fix system errors discovered by the testing team",
+        "Support devops in the product realease process for customers"
+      ],
+      "techs": [
+        "Typescript",
+        "NextJs",
+        "Redux saga",
+        "Sass module",
+        "Ant design"
+      ],
+      "link": "https://vmstyle.vn/"
+    },
+    {
+      "name": "Popeyes E-commerce Website/ Mobile App",
+      "desc": "Website and sales application for Popeyes fried chicken store ",
+      "img": "/project/popeyes.png",
+      "position": "Frontend",
+      "responsibility": [
+        "Build UI according to customer requirements, contribute ideas to help optimize the UX of the system",
+        "Develop functions that allow users to view menus, dish details, place orders and manage orders",
+        "Develop payment functions via e-wallets such as momo, paypal and payment via bank card",
+        "Fix system errors, coordinate with the professional team to deliver quality products to customers"
+      ],
+      "techs": [
+        "Typescript",
+        "NextJs",
+        "Redux saga",
+        "React Native",
+        "Sass module",
+        "Bootstrap"
+      ],
+      "link": "https://popeyes.vn/"
+    },
+    {
+      "name": "Apollo English Website",
+      "desc": "Website introducing Apollo English center ",
+      "img": "/project/apollo.webp",
+      "position": "Frontend",
+      "responsibility": [
+        "Based on figma design, build UI with perfect pixel criteria",
+        "Handle complex motion animation effects on UI",
+        "Coordinate with the backend team to develop functions to register for courses, view the list and location of centers"
+      ],
+      "techs": ["Javascript", "Jquery", "Sass", "PHP Laravel"],
+      "link": "https://apollo.edu.vn/"
+    },
+    {
+      "name": "Pharmacy Order Management System",
+      "desc": "Order management web application for pharmacy chain Pharmacity ",
+      "img": "/project/pharmacity.png",
+      "position": "Frontend",
+      "responsibility": [
+        "Build dashboard UI using Ant Design",
+        "Develop order management functions, add orders, create new orders, delete orders, edit information, sort based on creation date, product price, name",
+        "Fix detected errors, optimize performance for applications with maximum loading speed",
+        "Work with the BA team, come up with solutions, develop new functions based on customer requirements"
+      ],
+      "techs": [
+        "Typescript",
+        "ReactJs",
+        "Redux toolkit",
+        "Ant design",
+        "Sass module"
+      ]
+    }
+  ]
+}

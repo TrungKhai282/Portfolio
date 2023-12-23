@@ -16,10 +16,18 @@ const Footer = () => {
             <p>+84365472802</p>
             <p>khainguyentrantrung@gmail.com</p>
             <div className={style.social}>
-              <Link href={"/"} className={style.iconItem}>
+              <Link
+                href={"https://github.com/TrungKhai282"}
+                target="_blank"
+                className={style.iconItem}
+              >
                 <GithubIcon />
               </Link>
-              <Link href={"/"} className={style.iconItem}>
+              <Link
+                href={"https://linkedin.com/in/khaitrung2822001"}
+                target="_blank"
+                className={style.iconItem}
+              >
                 <LinkedinIcon />
               </Link>
             </div>
@@ -30,16 +38,16 @@ const Footer = () => {
             <Link href={"/"} className={style.navItem}>
               Home
             </Link>
-            <Link href={"/"} className={style.navItem}>
+            <Link href={"/about"} className={style.navItem}>
               About
             </Link>
-            <Link href={"/"} className={style.navItem}>
+            <Link href={"/tech-stack"} className={style.navItem}>
               Tech Stack
             </Link>
-            <Link href={"/"} className={style.navItem}>
+            <Link href={"/project"} className={style.navItem}>
               Project
             </Link>
-            <Link href={"/"} id="contact" className={style.navItem}>
+            <Link href={"/contact"} className={style.navItem}>
               Contact
             </Link>
           </div>

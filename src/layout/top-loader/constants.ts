@@ -1,4 +1,4 @@
-export const COLOR = "#EA553E";
+export const COLOR = "#00C0FD";
 
 export const INITIAL_POSITON = 0.08;
 

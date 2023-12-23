@@ -1,6 +1,6 @@
 "use client";
 
-import LoadingScreen from "@/screens/loading";
+import LoadingScreen from "@/components/loading";
 import React, { useEffect, useState } from "react";
 
 type PropsType = {

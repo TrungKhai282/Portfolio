@@ -1,22 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import style from "./index.module.scss";
-
-const listIcon = [
-  "html",
-  "css",
-  "js",
-  "ts",
-  "nodejs",
-  "reactjs",
-  "nextjs",
-  "redux",
-  "tailwind",
-  "sass",
-  "antd",
-  "git",
-  "github",
-  "vscode",
-];
+import Info from "@/common/info.json";
 
 const TechStack = () => {
   return (
@@ -26,9 +11,9 @@ const TechStack = () => {
         <span>Technologies I’ve been working with recently</span>
       </div>
       <div className={style.techList}>
-        {listIcon.map((item) => (
-          <div key={item} className={style.item}>
-            <img src={`/stackIcon/${item}.svg`} alt="" />
+        {Info.techStack.map((item) => (
+          <div key={item.name} className={style.item}>
+            <img src={item.imgUrl} alt="" />
           </div>
         ))}
       </div>

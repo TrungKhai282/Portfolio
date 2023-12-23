@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./index.module.scss";
 import ProjectCard from "@/components/projectCard";
-import ListProject from "@/common/project.json";
+import Info from "@/common/info.json";
 
 const Projects = () => {
   return (
@@ -11,7 +11,7 @@ const Projects = () => {
         <span>The projects I have participated in building so far</span>
       </div>
       <div className={style.listProject}>
-        {ListProject.project.map((item) => (
+        {Info.project.map((item) => (
           <ProjectCard
             key={item.name}
             className={style.item}
