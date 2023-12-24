@@ -14,7 +14,7 @@ const ContactScreen = () => {
           "animate__animated animate__bounceInUp delay200"
         )}
       >
-        khainguyentrantrung@gmail.com
+        khainguyentrantrung<span>@gmail.com</span>
       </p>
     </div>
   );

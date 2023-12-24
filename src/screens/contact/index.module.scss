@@ -5,15 +5,44 @@
     text-align: center;
 
     p{
-        font-size: 58px;
+        font-size: 48px;
         font-weight: 700;
+
+        @include Responsive(SM){
+            font-size: 32px;
+        }
+
+        @include Responsive(XS){
+            font-size: 24px;
+        }
+
+        @include Responsive(XXS){
+            font-size: 16px;
+        }
     }
 
     .mail{
-        font-size: 48px;
+        font-size: 42px;
         color: $color_text_lighter;
         background: linear-gradient(90deg, #00C0FD, #E70FAA);
         -webkit-text-fill-color: transparent;
         background-clip: text;
+        text-wrap:balance;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        @include Responsive(SM){
+            font-size: 28px;
+            flex-direction: column;
+        }
+
+        @include Responsive(XS){
+            font-size: 18px;
+        }
+
+        @include Responsive(XXS){
+            font-size: 14px;
+        }
     }
 }

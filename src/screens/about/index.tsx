@@ -51,7 +51,7 @@ const AboutScreen = () => {
           Education
         </div>
         <WorkTag
-          name="Bachelor's degree in information technology"
+          name="Bachelor's Degree In Information Technology"
           // tag="Full time"
           company="FPT Polytechnic"
           location="Ho Chi Minh City, Viet Nam"

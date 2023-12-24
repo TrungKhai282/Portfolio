@@ -133,7 +133,7 @@
     {
       "name": "Apollo English Website",
       "desc": "Website introducing Apollo English center ",
-      "img": "/project/apollo.webp",
+      "img": "/project/apollo.png",
       "position": "Frontend",
       "responsibility": [
         "Based on figma design, build UI with perfect pixel criteria",
