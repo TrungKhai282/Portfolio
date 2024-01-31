@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import style from "../index.module.scss";
 import Link from "next/link";
@@ -11,7 +12,9 @@ const Footer = () => {
     <div className={style.footer}>
       <div className={style.container}>
         <div className={style.info}>
-          <div className={style.left}>TrungKhai</div>
+          <div className={style.left}>
+            <img src="/sign.png" alt="" />
+          </div>
           <div className={style.right}>
             <p>+84365472802</p>
             <p>khainguyentrantrung@gmail.com</p>

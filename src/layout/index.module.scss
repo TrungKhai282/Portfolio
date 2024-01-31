@@ -20,6 +20,10 @@
     left: 0;
     width: 100vw;
 
+    @include Responsive(MD){
+        padding: 8px 0;
+    }
+
     &.fixed{
         position: fixed;
         background-color: rgba(0, 0, 0, 0.7);
@@ -33,16 +37,17 @@
         justify-content: space-between;
 
         .logo{
-            font-family: $font_kalam;
-            font-size: 42px;
-            font-weight: bold;
-            color: $color_text_lighter;
-            background: linear-gradient(90deg, #00C0FD, #E70FAA);
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            width: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             @include Responsive(MD){
-                font-size: 32px;
+                width: 100px;
+            }
+
+            img{
+                width: 100%;
             }
         }
 
@@ -256,9 +261,11 @@
             }
 
             .left{
-                font-family: $font_kalam;
-                font-size: 36px;
-                font-weight: bold;
+                width: 160px;
+
+                img{
+                    width: 100%;
+                }
             }
 
             .right{

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import React, { LegacyRef, useEffect, useRef, useState } from "react";
 import style from "../index.module.scss";
@@ -62,7 +63,7 @@ const Header = () => {
       >
         <div className={style.container}>
           <Link href={"/"} className={style.logo}>
-            Portfolio
+            <img src="/sign.png" alt="" />
           </Link>
           <div className={style.navbar}>
             <div className={style.navList}>
