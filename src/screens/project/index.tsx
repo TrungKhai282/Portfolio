@@ -14,21 +14,23 @@ const ProjectScreen = () => {
         <p>The projects I have participated in building so far</p>
       </div>
       <div className={style.listProject}>
-        {Info.project.map((item, index) => (
-          <ProjectCard
-            key={item.name}
-            className={clsx(
-              style.item,
-              `animate__animated animate__bounceIn animate__fast delay${
-                index + 1
-              }00`
-            )}
-            title={item.name}
-            desc={item.desc}
-            imageUrl={item.img}
-            id={index + 1}
-          />
-        ))}
+        {Info.project
+          .filter((item) => !item.hidden)
+          .map((item, index) => (
+            <ProjectCard
+              key={item.name}
+              className={clsx(
+                style.item,
+                `animate__animated animate__bounceIn animate__fast delay${
+                  index + 1
+                }00`
+              )}
+              title={item.name}
+              desc={item.desc}
+              imageUrl={item.img}
+              id={index + 1}
+            />
+          ))}
       </div>
     </div>
   );

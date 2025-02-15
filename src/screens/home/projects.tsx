@@ -11,16 +11,18 @@ const Projects = () => {
         <span>The projects I have participated in building so far</span>
       </div>
       <div className={style.listProject}>
-        {Info.project.map((item, index) => (
-          <ProjectCard
-            key={item.name}
-            className={style.item}
-            title={item.name}
-            desc={item.desc}
-            imageUrl={item.img}
-            id={index + 1}
-          />
-        ))}
+        {Info.project
+          .filter((item) => !item.hidden)
+          .map((item, index) => (
+            <ProjectCard
+              key={item.name}
+              className={style.item}
+              title={item.name}
+              desc={item.desc}
+              imageUrl={item.img}
+              id={index + 1}
+            />
+          ))}
       </div>
     </div>
   );

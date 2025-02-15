@@ -55,9 +55,72 @@
     {
       "imgUrl": "/stackIcon/vscode.svg",
       "name": "VS Code"
+    },
+    {
+      "imgUrl": "/stackIcon/zustand.png",
+      "name": "Zustand"
+    },
+    {
+      "imgUrl": "/stackIcon/docker.svg",
+      "name": "Docker"
     }
   ],
   "project": [
+    {
+      "name": "Suntory Pepsico RMS",
+      "desc": "Warehouse management and operation system for SPVB",
+      "img": "/project/spvb-rms.png",
+      "position": "Frontend",
+      "responsibility": [
+        "Build source structures, interfaces, and common components that can be reused in many places in the project",
+        "Coordinate with BA and designers to develop the website according to customer requirements, bringing convenience in use",
+        "Optimize experience and page loading speed to suit large-scale projects, without causing disruption during warehouse operations",
+        "Coordinate with devops to deploy projects to production environments"
+      ],
+      "techs": ["Typescript", "Reactjs", "React Query", "Ant Design", "Zustand"]
+    },
+    {
+      "name": "Suntory Pepsico Key Account Portal",
+      "desc": "Page to manage equipment repair tickets exclusively for SPVB customers",
+      "img": "/project/spvb-kap.png",
+      "position": "Frontend",
+      "responsibility": [
+        "Build source structures, interfaces, and common components that can be reused in many places in the project",
+        "Coordinate with BA and designers to develop the website according to customer requirements, bringing convenience in use",
+        "Undertake tasks related to decentralization and agreement on security standards for the website.",
+        "Coordinate with devops to deploy projects to production environments"
+      ],
+      "techs": ["Typescript", "Reactjs", "React Query", "Ant Design", "Zustand"]
+    },
+    {
+      "name": "Gene Solution Logistic",
+      "desc": "Application for operating logistics of test samples and blood samples for testing centers nationwide",
+      "img": "/project/glog.png",
+      "position": "Frontend",
+      "responsibility": [
+        "Maintain and develop new features according to customer requests",
+        "Ensure the application runs smoothly when there is a large amount of traffic and a large data store with millions of orders month.",
+        "Optimize performance, improve old code to avoid errors that may arise."
+      ],
+      "techs": [
+        "Typescript",
+        "Reactjs",
+        "React Query",
+        "Ant Design",
+        "React Bootstrap"
+      ]
+    },
+    {
+      "name": "LCS-CA Landing Page",
+      "desc": "Page introducing the digital signature product from LCS",
+      "img": "/project/lcs-ca.png",
+      "position": "Frontend",
+      "responsibility": [
+        "Build a landing page for the company to introduce the product with optimization for speed, SEO, improve user experience with smooth operation"
+      ],
+      "techs": ["Typescript", "NextJs", "Sass module", "Strapi OpenSource"],
+      "link": "https://lcs-ca.vn/"
+    },
     {
       "name": "AI Images Generator",
       "desc": "Web app supports users to create images with text or create new styles with existing images by integrating AI",
@@ -67,7 +130,8 @@
         "Build UI according to customer requirements",
         "Main functions include: Create image from text, create image from image, preview image after generating, download image, see a list of images created by others with arrangements based on views and creation time, manage your created images with functions such as favorite, delete, edit, download, recreate, and view detailed image information."
       ],
-      "techs": ["Typescript", "NextJs", "ReactQuery", "Sass module"]
+      "techs": ["Typescript", "NextJs", "ReactQuery", "Sass module"],
+      "hidden": true
     },
     {
       "name": "SonyBank Banking Web App",
